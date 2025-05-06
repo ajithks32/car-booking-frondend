@@ -10,7 +10,7 @@ const TaxiList = () => {
   useEffect(() => {
     const fetchTaxis = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/taxis");
+        const response = await axios.get("https://car-rental-backend-zy09.onrender.com/taxis");
         setTaxiData(response.data);
         console.log(response);
       } catch (error) {
