@@ -14,7 +14,7 @@ const BannerImage = () => {
     const fetchBanners = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get("http://localhost:5000/carsbanner");
+        const response = await axios.get("https://car-rental-backend-zy09.onrender.com/carsbanner");
         setUploadedImages(response.data);
       } catch (error) {
         setError("Error fetching banners. Please try again later.");
