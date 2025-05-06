@@ -38,7 +38,7 @@ const BookUrTaxi = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/bookings", formData);
+      const response = await axios.post("https://car-rental-backend-zy09.onrender.com/bookings", formData);
      
       setBookingId(response.data.bookingId);
       setShowPopup(true);
