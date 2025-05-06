@@ -42,7 +42,7 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
   <li className="nav-item">
-    <Link className="nav-link" to="/">HOMEe</Link>
+    <Link className="nav-link" to="/">HOME</Link>
   </li>
   <li className="nav-item">
     <Link className="nav-link" to="/about">ABOUT</Link>
@@ -66,7 +66,7 @@ const Header = () => {
           {user ? (
             <div className="user-profile">
               <img 
-                src={`http://localhost:5000/uploads/${user.profilePic}`} 
+                src={`https://car-rental-backend-zy09.onrender.com/uploads/${user.profilePic}`} 
                 alt="Profile" 
                 className="profile-pic"
               />
