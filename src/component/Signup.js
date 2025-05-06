@@ -23,7 +23,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/auth/register", formData, {
+      const response = await axios.post("https://car-rental-backend-zy09.onrender.com/auth/register", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
