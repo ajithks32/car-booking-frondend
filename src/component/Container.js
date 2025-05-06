@@ -136,7 +136,7 @@ const Container = () => {
     useEffect(() => {
       const fetchOffers = async () => {
         try {
-          const response = await axios.get("http://localhost:5000/offers");
+          const response = await axios.get("https://car-rental-backend-zy09.onrender.com/offers");
           
           setOfferImages(response.data); // No need to modify paths here anymore
     
@@ -153,7 +153,7 @@ const Container = () => {
     useEffect(() => {
       const fetchBanners = async () => {
         try {
-          const response = await axios.get("http://localhost:5000/carsbanner"); // Backend API
+          const response = await axios.get("https://car-rental-backend-zy09.onrender.com/carsbanner"); // Backend API
           setBannerImages(response.data);
         } catch (error) {
           console.error("Error fetching banner images:", error);
