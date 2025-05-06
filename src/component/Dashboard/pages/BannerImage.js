@@ -43,7 +43,7 @@ const BannerImage = () => {
     setSuccess(null);
 
     try {
-      const response = await axios.post("http://localhost:5000/carsbanner", formData, {
+      const response = await axios.post("https://car-rental-backend-zy09.onrender.com/carsbanner", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
