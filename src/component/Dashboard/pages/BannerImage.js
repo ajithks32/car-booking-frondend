@@ -65,7 +65,7 @@ const BannerImage = () => {
     setSuccess(null);
 
     try {
-      await axios.delete(`http://localhost:5000/carsbanner/${imageName}`);
+      await axios.delete(`https://car-rental-backend-zy09.onrender.com/carsbanner/${imageName}`);
       setUploadedImages((prev) => prev.filter((img) => img !== imageUrl));
       setSuccess("Image deleted successfully!");
     } catch (error) {
