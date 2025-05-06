@@ -57,7 +57,7 @@ const TaxiCard = ({ image, model, gear, capacity, fuel, price8hr, price24hr, pri
       transition={{ duration: 0.6 }}
     >
       <div className="card-image-section">
-        <img src={`http://localhost:5000${image}`} alt={model} className="card-photo" />
+        <img src={`https://car-rental-backend-zy09.onrender.com${image}`} alt={model} className="card-photo" />
       </div>
 
       <div className="card-info">
